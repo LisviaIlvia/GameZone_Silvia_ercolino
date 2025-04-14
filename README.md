@@ -1,12 +1,56 @@
-# React + Vite
+# Progetto Finale
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Per questo progetto, userai tutto quello che hai imparato durante questo corso di specializzazione, usando React e librerie varie.
 
-Currently, two official plugins are available:
+Da consegnare:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Deve avere almeno 4 pagine
+* Deve integrare una API estrena
+* Fare chiamate API in risposta alle interazioni dell'utente
+* Condividere i dati sull'applicazione mediante l'uso del contesto
+* Deve avere delle soluzioni di stile ben definite o uso di librerie per componenti ben definite
+* Deve avere un sistema di autenticazione valido
+* Deve essere caricata online
 
-## Expanding the ESLint configuration
+## API
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Scegli una API esterna esistente e funzionante
+
+* Idealmente provate a trovare una API che:
+  * é gratis
+  * supporta CORS error
+  * richiede solo autenticazione e non richeda OAuth
+
+* Il progetto sfrutterà un servizio di backend ( BaaS )
+  * Integrazione con supabase
+  * Integrazione con Auth
+  * (Opzionale) Integrazione di OAuth con ( discord )
+
+## Proposta di consegna
+
+Quando hai finito di fare il progetto, aggiorna il file [PROPOSTA_DI_CONSEGNA](./PROPOSTA_DI_CONSEGNA.md) includendo tutto cio che ti viene chiesto.
+
+## FAQ
+
+* Quanto tempo ho per consegnare?
+  * Una volta terminate le lezioni live hai un margine di 1 mese (approssimativo) per consegnare il progetto finale.
+* Quanto tempo ho per consegnare da quando finisce il corso?
+  * Da quando finisce il corso 1 mese approssimativo.
+* Dove vengono salvati i dati dell'utente?
+  * Vengono salvati in un database online.
+* Dove faccio il deploy online?
+  * Per semplicità e praticitá useremo VERCEL
+* Gli utenti posso fare login?
+  * Integrando il db online, si potranno e dovranno fare login.
+* Per ottenere l'attestato mi basta consegnare solo il progetto finale?
+  * Si. Il progetto finale é un indicatore fondamentale del livello di conoscenze in React.
+* Posso usare un BaaS a mio piacimento?
+  * Si, puoi usarlo se hai confidenza con il tool che andrai ad integrare. Se non hai abbastanza esperienza con il tool, ti consigliamo si seguire quello che verrá usato a lezione.
+* Durante il graduation Day ti fine corso ci saranno Aziende a vedere il progetto?
+  * Non ci saranno Aziende.
+* Ho assistenza dopo la fine del corso per varie ed eventuali?
+  * Si, solo su previa organizzazione, se il docente non é disponibile.
+* Una volta finito il progetto quali sono le modalità di consegna e valutazione?
+  * Le modalità di consegna solo la clonazione del file [PROPOSTA_DI_CONSEGNA](./PROPOSTA_DI_CONSEGNA.md) e caricamento del repository github sull'organizzazione con `NOME-COGNOME-PROGETTO`
+* Posso fare un progetto di gruppo?
+  * Si puó lavorare in gruppo ma il progetto va consegnato individualmente. Tutti diversi tra loro.
