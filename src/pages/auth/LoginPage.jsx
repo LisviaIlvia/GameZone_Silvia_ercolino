@@ -18,7 +18,7 @@ import {
 
 export default function LoginPage() {
   const theme = useTheme();
-  const isDarkMode = theme.palette.mode === "dark";
+  // const isDarkMode = theme.palette.mode === "dark";
   const navigate = useNavigate();
 
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -202,7 +202,7 @@ export default function LoginPage() {
             </MuiLink>
           </Typography>
           <Button type="submit" variant="contained" fullWidth>
-            Sign In
+            Login
           </Button>
         </Box>
       </Container>
