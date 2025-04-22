@@ -8,7 +8,7 @@ import {
   useTheme,
 } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
+import XIcon from '@mui/icons-material/X';
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
@@ -103,7 +103,7 @@ export default function Footer() {
                 <FacebookIcon />
               </IconButton>
               <IconButton
-                href="https://twitter.com"
+                href="https://x.com"
                 target="_blank"
                 sx={{
                   color: "inherit",
@@ -112,7 +112,7 @@ export default function Footer() {
                   },
                 }}
               >
-                <TwitterIcon />
+                <XIcon />
               </IconButton>
               <IconButton
                 href="https://instagram.com"
