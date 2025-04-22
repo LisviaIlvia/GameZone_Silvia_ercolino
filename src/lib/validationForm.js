@@ -7,7 +7,7 @@ const passwordError =
 
 // Schema del form di registrazione
 export const FormSchema = z.object({
-  email: z.string().email("Email non valida"),
+  email: z.string().email("Invalid email"),
   firstName: z.string().min(1, "First name is required"),
   lastName: z.string().min(1, "Last name is required"),
   username: z.string().min(3, "Username must be at least 3 characters"),
@@ -20,8 +20,9 @@ export const FormSchema = z.object({
 // Usa direttamente FormSchema come schema principale
 export const ConfirmSchema = FormSchema;
 
+// Schema del form di login
 export const FormSchemaLogin = z.object({
-  email: z.string().email("Email non valida"),
+  email: z.string().email("Invalid email"),
   password: z
     .string()
     .min(8, "Password must be at least 8 characters")
@@ -50,7 +51,7 @@ export const getRegisterFieldError = (property, value) =>
 // Per estrarre tutti gli errori da Zod in un oggetto `{ field: message }`
 export const getErrors = (error) =>
   error.issues.reduce((all, issue) => {
-    const path = issue.path.join(""); // es. ["email"] => "email"
+    const path = issue.path.join("");
     const message = all[path] ? all[path] + ", " : "";
     all[path] = message + issue.message;
     return all;

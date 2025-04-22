@@ -3,7 +3,6 @@ import { Link } from "react-router";
 
 export default function ErrorPage() {
   const theme = useTheme();
-  const isDarkMode = theme.palette.mode === "dark";
 
   return (
     <Box
